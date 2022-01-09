@@ -7,7 +7,57 @@
     <link href="style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div id="clock"></div>
+		<header>
+	    <!-- <h1>Doom O'Clock</h1> -->
+			<nav>
+				<ul id="headFlex">
+					<!-- doing a link to a # will link to a certain part of a page -->
+					<li><a href="#clockC">Clock</a></li>
+					<li><a href="#info">Where do the Emissions Come From</a></li>
+					<li><a href="#fistLayerInfo">Sources</a></li>
+				</ul>
+			</nav>
+			<div id="whiteBar"></div>
+		</header>
+		<!-- this will force it to have a max width and not be  -->
+		<div class="bodySection">
+			<!-- This needs to be centerd and look nice-->
+			<div class="clockContainer" id="clockC"><span class="inlineClockCon">
+				<span id="clock"></span><br>
+				Tons of CO2 released by Humanity since 1850
+			</span></div>
+
+			<!-- code for the visualization -->
+			<div class="infoContainer" id="info">
+				<ul id="fistLayerInfo">
+					<!-- doing a link to a # will link to a certain part of a page -->
+					<li onclick="changeInfo(this)">Transportation <span class="percent">29%</span></li>
+					<li onclick="changeInfo(this)">Electricity production<span class="percent">25%</span></li>
+					<li onclick="changeInfo(this)">Industry<span class="percent">23%</span></li>
+					<li onclick="changeInfo(this)">Commercial and Residential<span class="percent">13%</span></li>
+					<li onclick="changeInfo(this)">Agriculture<span class="percent">10%</span></li>
+					<!-- <li onclick="changeInfo(this)">Land Use and Forestry<span class="percent">12%</span></li> -->
+				</ul>
+
+				<div id="secLayerInfo" class="error-label">
+					
+				</div>
+			</div>
+			<ul id="sorces">
+				<h3>Sources</h3>
+				<li>
+				<a href="https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions">https://www.epa.gov/ghgemissions/sources-greenhouse-gas-emissions</a>
+				</li>
+				<!-- can you find more sorces? where does carbon emmition come from? -->
+				<!-- https://ourworldindata.org/ghg-emissions-by-sector -->
+        <!--https://www.ucsusa.org/resources/each-countrys-share-co2-emissions-->
+				<!-- feel free to try and added it to the sorces list code -->
+				<!-- this is a comment it is code that is not read by the computer -->
+				<li><a href="https://ourworldindata.org/ghg-emissions-by-sector">https://ourworldindata.org/ghg-emissions-by-sector</a></li>
+				<li><a 
+        href="https://www.ucsusa.org/resources/each-countrys-share-co2-emissions">https://www.ucsusa.org/resources/each-countrys-share-co2-emissions</a></li>
+			</ul>
+		</div>
     <script src="script.js"></script>
   </body>
 </html>

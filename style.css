@@ -1,0 +1,134 @@
+body {
+	margin: 0px;
+	padding: 0px;
+  font-family: 'Poppins', sans-serif;
+	background:  url(Co2BG.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+  background-attachment: fixed;
+	/* background-position-x: 0%, 0%;
+	background-position-y: 0%, 0%;
+	background-size: auto, auto;
+	background: linear-gradient(180deg, rgba(45, 50, 130, 0.3) 0%, #2D3282 100%), url(earthbg.png);
+	background-size: cover;
+	background-position: bottom center; */
+}
+html {
+  scroll-behavior: smooth;
+}
+/* makes everything in the body a little low to accomadate the nav bar */
+.bodySection {
+	width: 100%;
+	/* max-width: 850px; */
+	scroll-margin-top: calc(3.3em + 18px);
+	margin-top: calc(3.3em + 18px);
+}
+
+/* code for the header */
+header {
+	position: fixed;
+	width: 100%;
+	background: black;
+	right: 0;
+	top:0;
+  z-index: 100000;
+}
+
+#headFlex {
+	display: flex;
+	justify-content: space-around;
+	color:white;
+	list-style-type: none;
+	padding:0px;
+	margin: auto;
+	margin-top: 1em;
+	margin-bottom: 1em;
+	max-width: 600px;
+	font-size: 1.2em;
+	flex-wrap: wrap;
+}
+#headFlex a {
+	color: white;
+	text-decoration: none;
+	margin-left: 1em;
+	margin-right: 1em;
+}
+
+/* style for the first time section */
+.clockContainer {
+	height: 50vh;
+	/* centeing the clock */
+	display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.inlineClockCon {
+	text-align: center;
+}
+#clock {
+	font-size: 2em;
+}
+
+/* style for the info area */
+.infoContainer {
+	display: flex;
+	/* justify-content: space-evenly; */
+	height: 60vh;
+}
+
+#fistLayerInfo {
+	display: flex;
+	justify-content: space-between;
+	list-style-type: none;
+	padding:0px;
+	margin:0;
+	font-size: 1.2em;
+	flex-wrap: wrap;
+	flex-direction:column;
+	height: 100%;
+	width: 45%;
+	margin-left: 2.5%;
+	margin-right: 2.5%;
+}
+
+#fistLayerInfo > li {
+	background-color: lightgreen;
+	width: 100%;
+	vertical-align: middle;
+}
+
+#fistLayerInfo > li:hover {
+	background-color: rgb(206, 243, 206);
+}
+
+.percent {
+	float: right;
+}
+#secLayerInfo {
+	background-color: lightgreen;
+	width: 47.5%;
+	/* margin-left: 2.5%; */
+	margin-right: 2.5%;
+	overflow: scroll;
+	padding: 1.5em;
+	text-indent: 1em;
+}
+
+/* carrit
+div.error-label {
+
+}
+
+div.error-label:before {
+	--widthA: calc(100% - 30px);
+  content: ' ';
+  height: 0;
+  width: 0;
+	left: 50%;
+  transform: translate(-3.8vw);
+	/* transform: translateY(); */
+  /* border: 2vw solid transparent;
+  /* border-right-color: lightgreen; 
+	display: block;
+	margin-top: var(--widthA);
+} */
